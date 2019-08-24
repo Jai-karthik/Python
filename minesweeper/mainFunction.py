@@ -15,7 +15,7 @@ def showGrid(x,y):
     row1 = ui.button_list[x][y].grid_info()['row']      # Row of the button
     column1 = ui.button_list[x][y].grid_info()['column']   # grid_info will return dictionary with all grid elements (row, column, ipadx, ipday, sticky, rowspan and columnspan)
     print("Grid position of 'btn': {} {}".format(row1, column1))
-    print(mines_matrix[x][y])
+    #print(mines_matrix[x][y])
     ui.btn_texts[x][y].set(str(x)+','+str(y))
     ui.btn_texts[x][y].set(cell_indication[x][y])
     zero_list = []
